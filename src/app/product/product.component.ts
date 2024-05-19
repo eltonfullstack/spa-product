@@ -27,6 +27,7 @@ export class ProductComponent implements OnInit, OnDestroy {
     getAllProducts() {
         this.store.dispatch(loadproducts());
         this.store.select(getProducts).subscribe((data) => {
+            console.log(data);
             this.productInfo = data
         });
     }

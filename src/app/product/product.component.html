@@ -1,5 +1,19 @@
-<ul>
-    <li *ngFor="let product of productInfo">
-        {{product.name}}
-    </li>
-</ul>
+
+
+<div class="float-container">
+  <div class="float-child" *ngFor="let product of productInfo">
+    <div>
+      <h1>{{ product.name }}</h1>
+    </div>
+    <div>
+      <img src="{{ product.image }}" alt="image" height="170" width="100%"/>
+    </div>
+    <div>
+      <p>{{ product.description }}</p>
+      <span>{{ product.price }}</span>
+    </div>
+    <div class="container-btn">
+      <button class="btn-add">Add to cart</button>
+    </div>
+  </div>
+</div>

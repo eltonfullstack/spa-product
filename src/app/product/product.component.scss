@@ -3,3 +3,51 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.float-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    // background-color: aqua;
+    // border: 3px solid #000;
+    padding: 10px;
+    gap: 5px;
+}
+
+.float-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    float: left;
+    padding: 20px;
+    border: 2px solid lightgray;
+}
+
+.container-btn {
+    width: 100%;
+}
+
+.btn-add {
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: orange;
+    color: #000;
+}
+
+@media screen and (max-width: 375px) {
+    .float-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .float-child {
+        width: 100%;
+    }
+}
